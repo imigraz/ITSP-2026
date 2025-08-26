@@ -1,4 +1,4 @@
-# ITSP-2026
+# ITSP 2026
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
