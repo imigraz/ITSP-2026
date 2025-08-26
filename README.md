@@ -1,15 +1,14 @@
 # ITSP-2026
 
-[![CC BY 4.0][cc-by-shield]][cc-by]
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 Materials for the 'Introduction to Scientific Programming' course, SS 2026.
 
 ## License
 
-[![CC BY 4.0][cc-by-image]][cc-by]
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
-This work is licensed under a
-[Creative Commons Attribution 4.0 International License][cc-by].
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)][cc-by-sa].
 
 You are free to:
 
@@ -19,10 +18,12 @@ You are free to:
 
 Under the following terms:
 
-- **Attribution** — You must give appropriate credit , provide a link to the license, and indicate if changes were made . You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+- No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
-Full terms of the license can be found under <https://creativecommons.org/licenses/by/4.0/>.
+Full terms of the license can be found under: <https://creativecommons.org/licenses/by-sa/4.0/>
 
-[cc-by]: http://creativecommons.org/licenses/by/4.0/
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+[cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
