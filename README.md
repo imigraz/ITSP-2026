@@ -2,11 +2,9 @@
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
-Materials for 'Introduction to Scientific Programming' SS 2026 course. 
+Materials for the 'Introduction to Scientific Programming' course, SS 2026.
 
 ## License
-
-Copyright Medical University of Graz
 
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
