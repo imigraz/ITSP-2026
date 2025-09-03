@@ -2,6 +2,8 @@
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
+**CONTENT TO APPEAR IN DUE COURSE!!!**
+
 Materials for the 'Introduction to Scientific Programming' course, SS 2026.
 
 ## License
