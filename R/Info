@@ -1,0 +1,23 @@
+The course “Introduction to scientific programing – Linux, Python and R” (LV 0940.197) will take place January 27-30 & February 2 2026. We would like to give you some information in advance.
+Course dates
+Tue 27.01.2026		SR 68 (MC2.Q.01.040)	Python
+Wed 28.01.2026	SR 68 (MC2.Q.01.040)	Python
+Thu 29.01.2026		SR 68 (MC2.Q.01.040)	R
+Fri 30.01.2026		SR 68 (MC2.Q.01.040)	R 
+Mon 02.02.2026	SR 68 (MC2.Q.01.040) 	Linux
+
+Course structure
+-	Morning 	09:00-11:30
+-	Lunch break	11:30-12:30
+-	Afternoon	12:30-15:00
+
+Regarding hardware
+The seminar rooms are equipped with laptops that you can use, however, you are free to use your own devices. We will work with Python and R using a web-server, and therefore you only need a web-browser and your student login credentials in order to complete the course. 
+
+If you would like to use your own laptop, make sure that you have a current version of R and the following packages installed:
+•	tidyverse
+•	knitr
+•	gtsummary
+•	flextable
+•	readxl
+
