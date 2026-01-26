@@ -4,7 +4,7 @@
 
 **CONTENT TO APPEAR IN DUE COURSE!!!**
 
-Materials for the 'Introduction to Scientific Programming' course, SS 2026.
+Materials for the 'Introduction to Scientific Programming' course, WS 2025/2026.
 
 ## License
 
