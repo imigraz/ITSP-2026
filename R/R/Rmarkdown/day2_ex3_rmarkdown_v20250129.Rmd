@@ -1,0 +1,81 @@
+---
+title: "Day2 - Exercise 3"
+subtitle: "Combine Markdown and R chunks"
+author: "YOUR NAME"
+date: "2025-01-30"
+output: 
+   html_document:
+     toc: TRUE
+     toc_float: TRUE
+---
+
+```{r setup, include = FALSE}
+# settings for output
+  knitr::opts_chunk$set(echo = FALSE)
+
+# libraries used in this Rmd
+  library(ggplot2)
+  library(tidyverse)
+  library(flextable)
+  library(gtsummary)
+
+# data preparation
+  dt_iris <- iris
+```
+
+
+# Famous iris data ‘iris’
+## Background
+
+This famous (Fisher’s or Anderson’s) ‘iris’ data set gives the measurements in centimeters of the variables
+sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of
+iris, i.e., in total `r nrow(dt_iris)` entries.
+
+## Data
+
+```{r dataset1}
+# show first 5 lines
+  dt_iris %>% 
+    filter(row_number() <= 5) %>% 
+    flextable::flextable() 
+```
+
+### Descriptive statistics
+```{r}
+
+dt_iris %>%
+  tbl_summary(by = Species) 
+
+```
+
+[Link to tbl_summary() of package gtsummary](https://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html)
+
+### Scatter plot
+
+```{r scatterplot, echo = FALSE}
+ # Run the code to create scatter plot as shown on the slide  
+    
+    lab_species <- c("Iris setosa", "Iris virginica", "Iris versicolor")
+    
+    plot_iris_f <-
+      ggplot(data = dt_iris, aes(x = Sepal.Length, y = Sepal.Width, fill = Species)) +
+      geom_point(aes(shape = Species), size = 3, alpha = 0.7) +
+      
+      scale_fill_manual(values = c("darkred", "blue", "orange"),
+                        labels = lab_species) +
+      scale_shape_manual(values = c(21, 22, 24),
+                         labels = lab_species) +
+      labs(title = "Dataset Iris") +
+      xlab("Sepal length [cm]") +
+      ylab("Sepal width [cm]") +
+      coord_cartesian(xlim = c(4, 8), ylim = c(2, 5)) +
+      theme_bw() +
+      theme(plot.title = element_text(face = "bold", size = 25),
+            axis.title = element_text(size = 20),
+            axis.text = element_text(size = 14),
+            legend.title = element_text(size = 16),
+            legend.text = element_text(size = 14)) 
+    
+    plot_iris_f
+```
+
