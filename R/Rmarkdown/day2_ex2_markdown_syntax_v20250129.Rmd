@@ -1,0 +1,28 @@
+---
+title: "Day 2 - Exercise 2"
+subtitle: "Testing R Markdown"
+author: "Sereina Herzog"
+date: "2025-01-29"
+output: html_document
+---
+
+# Header 1
+
+We are currently looking only at markdown syntax - no 'R chunks'.
+
+
+get something *italic* or even **bold**
+
+## List of things
+
+**To Do List:**
+
+* Literature
+   - read paper by Smith et al
+   - search for papers about XYZ
+* Lab work
+   - update lab book!!!!
+   
+# Equations
+
+equation: $e^{i \pi} + 1 = 0$
