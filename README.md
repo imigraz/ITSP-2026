@@ -2,9 +2,10 @@
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-**CONTENT TO APPEAR IN DUE COURSE!!!**
+Materials for the *Introduction to Scientific Programming* course (LV 0940.197), **WS 2025/2026**, offered via the Molecular Medicine PhD programme.
 
-Materials for the 'Introduction to Scientific Programming' course, WS 2025/2026.
+- Python content can be found in the Python directory, by clicking [here](R/).
+- R content can be found in the R directory, by clicking [here](Python/).
 
 ## License
 
