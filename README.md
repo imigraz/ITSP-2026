@@ -10,7 +10,7 @@ Materials for the *Introduction to Scientific Programming* course (LV 0940.197),
 For questions, contact:
 
 - Python content: [Marcus Bloice](https://online.medunigraz.at/mug_online/visitenkarte.show_vcard?pPersonenId=2122D9C7B06ADB48&pPersonenGruppe=3)
-- R content: [Sereina Herzog](https://online.medunigraz.at/mug_online/visitenkarte.show_vcard?pPersonenId=8BB9331376A5A83B&pPersonenGruppe=3)
+- R content: [Gudrun Pregartner](https://online.medunigraz.at/mug_online/visitenkarte.show_vcard?pPersonenId=D0AF4320570A0676&pPersonenGruppe=3) / [Sereina Herzog](https://online.medunigraz.at/mug_online/visitenkarte.show_vcard?pPersonenId=8BB9331376A5A83B&pPersonenGruppe=3)
 
 ## License
 
