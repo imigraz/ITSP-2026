@@ -1,11 +1,16 @@
-# ITSP 2026
+# Introduction to Scientific Programming (ITSP) 2026
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-Materials for the *Introduction to Scientific Programming* course (LV 0940.197), **WS 2025/2026**, offered via the Molecular Medicine PhD programme.
+Materials for the *Introduction to Scientific Programming* course (LV 0940.197), **WS 2025/2026**, offered via the Molecular Medicine PhD programme, Medical University of Graz.
 
 - Python content can be found in the Python directory, by clicking [here](Python/).
 - R content can be found in the R directory, by clicking [here](R/).
+
+For questions, contact:
+
+- Python content: [Marcus Bloice](https://online.medunigraz.at/mug_online/visitenkarte.show_vcard?pPersonenId=2122D9C7B06ADB48&pPersonenGruppe=3)
+- R content: [Sereina Herzog](https://online.medunigraz.at/mug_online/visitenkarte.show_vcard?pPersonenId=8BB9331376A5A83B&pPersonenGruppe=3)
 
 ## License
 
