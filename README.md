@@ -4,8 +4,8 @@
 
 Materials for the *Introduction to Scientific Programming* course (LV 0940.197), **WS 2025/2026**, offered via the Molecular Medicine PhD programme.
 
-- Python content can be found in the Python directory, by clicking [here](R/).
-- R content can be found in the R directory, by clicking [here](Python/).
+- Python content can be found in the Python directory, by clicking [here](Python/).
+- R content can be found in the R directory, by clicking [here](R/).
 
 ## License
 
