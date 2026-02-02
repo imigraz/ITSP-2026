@@ -1,0 +1,140 @@
+---
+title: "Day2 - Exercise 4"
+subtitle: "Report with figures"
+author: "YOUR NAME"
+date: "2025-01-30"
+output: 
+   html_document:
+     toc: TRUE
+     toc_float: TRUE
+---
+
+```{r setup, include = FALSE}
+# settings for output
+  knitr::opts_chunk$set(echo = FALSE)
+
+# libraries used in this Rmd
+  library(ggplot2)
+  library(tidyverse)
+  library(flextable)
+  library(gtsummary)
+```
+
+```{r}
+# Data preparation
+  # Fuel economy data ‘mpg’
+    dt_mpg <- mpg
+
+  # Pharmacokinetics of Theophylline ‘Theoph’
+    dt_theoph <- Theoph
+    
+  # Famous iris data ‘iris’
+    dt_iris <- iris
+```
+
+
+# Fuel economy data ‘mpg’
+## Task 1 - Bar charts
+
+```{r}
+ ggplot(data = dt_mpg, mapping = aes(x = manufacturer)) +
+      geom_bar(aes(y = after_stat(prop), group = 1),
+               fill = "darkgreen", color = "black") +
+      
+      scale_y_continuous(labels = scales::percent) +
+      theme_bw() +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1),
+            axis.title.y = element_blank()) 
+```
+
+##  Task 2 - Histogram
+```{r}
+ p_hist_displ <-
+   ggplot(data = dt_mpg, mapping = aes(x = displ)) +
+        geom_histogram(fill = "darkgreen", color = "black",
+                       binwidth = 0.25,) +
+        xlab("Engine displacement [l]") +
+        theme_bw()  + 
+        facet_grid(class ~.)
+
+ p_hist_displ
+```
+
+## Task 3 - Box plot
+
+```{r}
+ p_boxplot_displ <-
+      ggplot(data = dt_mpg, mapping = aes(y = displ, x = class)) +
+        geom_boxplot(fill = "darkgreen", color = "black") +
+        ylab("Engine displacement [l]") +
+        theme_bw() 
+    
+    p_boxplot_displ  
+```
+
+## Task 4 - Combine different plots in one big plot
+
+```{r}
+
+ cowplot::plot_grid(p_boxplot_displ, p_hist_displ, 
+                       labels = c("A", "B"), nrow = 2)
+```
+
+## Task 5 - Scatterplot
+
+```{r}
+ ggplot(data = dt_mpg, mapping = aes(x = displ, y = hwy, 
+                                        color = (cyl > 5))) +
+      geom_point(alpha = 0.3) +
+      
+      xlab("Engine displacement [l]") +
+      ylab("Highway miles per gallon") +
+      labs(color = "Number of cylinders") +
+      scale_color_manual(labels = c(">5", "<=5"),
+                         values = c("blue", "red"))+
+      theme_bw() 
+```
+
+
+# Pharmacokinetics of Theophylline 'Theoph'
+## Task 6 - Line plot
+
+```{r}
+ ggplot(data = dt_theoph, mapping = aes(x = Time, y = conc,
+                                group = Subject, color = (Dose > 4.5))) +
+      geom_point() +
+      geom_line() +
+      
+      xlab("Time since drug administration  [hr]") +
+      ylab("Theophylline concentration in the sample [mg/L]") +
+      labs(color = "Dose") +
+      scale_color_manual(labels = c(">4.5", "<=4.5"),
+                         values = c("purple", "orange"))+
+      theme_bw() 
+    
+```
+
+# Famious Iris dataset 'iris'
+##  Task 7 - iris
+```{r}
+ p_iris_scatter <- 
+      ggplot(data = dt_iris, 
+             aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+        geom_point(size = 3) +
+        labs(title = "Dataset Iris") +
+        theme_bw()
+    
+
+    p_iris_box <-
+      
+      ggplot(data = iris, 
+             aes(x = Species, y = Sepal.Width, fill = Species)) +
+        geom_boxplot() +
+        labs(title = "Dataset Iris") +
+        theme_bw()
+    
+
+    cowplot::plot_grid(p_iris_scatter, p_iris_box, 
+                       labels = c("A", "B"), nrow = 2)
+```
+
